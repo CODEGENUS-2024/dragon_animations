@@ -31,7 +31,7 @@ const prepend = (use, i) => {
 	elem.setAttributeNS(xlinkns, "xlink:href", "#" + use);
 	screen.prepend(elem);
 };
-	
+
 const N = 40;
 
 const elems = [];
@@ -64,8 +64,7 @@ const run = () => {
 		e.use.setAttributeNS(
 			null,
 			"transform",
-			`translate(${(ep.x + e.x) / 2},${(ep.y + e.y) / 2}) rotate(${
-				(180 / Math.PI) * a
+			`translate(${(ep.x + e.x) / 2},${(ep.y + e.y) / 2}) rotate(${(180 / Math.PI) * a
 			}) translate(${0},${0}) scale(${s},${s})`
 		);
 	}
@@ -78,3 +77,4 @@ const run = () => {
 };
 
 run();
+// end
